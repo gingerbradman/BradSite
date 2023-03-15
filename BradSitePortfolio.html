@@ -1,89 +1,248 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<style>
-    .container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-    }
-    img {
-    max-width: 100%
-    }
-    .image {
-    flex-basis: 40%
-    }
-    .text {
-    font-size: 20px;
-    padding-left: 20px;
-    }
-</style>
+    <title>
+        Brad's Portfolio
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="StyleSheet.css" rel="stylesheet">
 </head>
 
 <body>
-<!-- Content will go here -->
+    <!-- Content will go here -->
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-    <a href="BradSiteHome.html" class="w3-button w3-bar-item">Home</a>
-    <a href="BradSiteAboutMe.html" class="w3-button w3-bar-item">About Me</a>
-    <a href="BradSitePortfolio.html" class="w3-button w3-bar-item">Portfolio</a>
-    <a href="BradSiteResume.html" class="w3-button w3-bar-item">Resume</a>
-</nav>
+    <!-- Navigation -->
+    <ul>
+        <li><a href="BradSiteHome.html">Home</a></li>
+        <li><a class="active" href="BradSitePortfolio.html">Portfolio</a></li>
+        <li><a href="BradSiteResume.html">Resume</a></li>
+    </ul>
 
-<!-- Title -->
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">I make things!</h2>
-    <p class="w3-opacity"><i>Please enjoy them</i></p>
-</section> 
-
-<!-- Portfolio -->>
-
-<div class="container">
-    <div class="image">
-        <img src="Pictures/DaRedGobbo.png">
+    <!-- Title -->
+    <div class="PortfolioTitlecontainer">
+        <div>
+            <p class="Skillheader">Here is my portfolio!</p>
         </div>
-        <div class="text">
-            <h1>Da Red Gobbo</h1>
+        <div>
+            <p>
+                Below is a collection of games, projects, and assets I've made.
+                If you are interested in viewing
+                the source code for any project, click the github icon in the section next
+                to the game's image.
+            </p>
         </div>
     </div>
-    <div class="image">
-        <img src="Pictures/EgyptianShovelKnight.png">
+
+    <!-- Portfolio -->
+    <div class="Portfoliocontainer">
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
         </div>
-        <div class="text">
-            <h1>EgyptianShovelKnight</h1>
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">Dungeon Dice Frogs</p>
+            </div>
+            <div>
+                <p>
+                    Dungeon Dice Frogs is a game jam submission for the Mini Jam 106: Frogs Game Jam.
+                    I worked together with a colleague to create this 3D heaxgonal tile turn-based game
+                    where players choose frogs, who are also dice, and use them by rolling and fighting
+                    against an A.I. enemy. This game is currently still in a private repo but can be played
+                    on my itch page. The github icon for this description will redirect to the itch page. Made in Unity. Published on Itch.
+                </p>
+            </div>
+            <div>
+                <a href="https://gingerbradman.itch.io/"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
         </div>
     </div>
-    <div class="image">
-        <img src="Pictures/DiscountPowerRangers.png">
+
+    <div class="Portfoliocontainer">
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">One Room Dungeon</p>
+            </div>
+            <div>
+                <p>
+                    One Room Dungeon is a game jam submission for the IndieTales Game Jam. I worked alone to
+                    design, program, and create the assets for this level-based 2D shooter where the walls can be moved
+                    and move on their own. Made in Unity. Published on Itch.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/OneRoomDungeon"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
         </div>
-        <div class="text">
-            <h1>DiscountPowerRangers</h1>
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
         </div>
     </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
-    <a href="https://github.com/gingerbradman"><i class="fa fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/brad-kraemer-aaa3b1186"><i class="fa fa-linkedin"></i></a>
-    <p class="w3-medium">
-    </p>
-</footer>
+    <div class="Portfoliocontainer">
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">Temple of Hanoi</p>
+            </div>
+            <div>
+                <p>
+                    Temple of Hanoi is a pixelated version of the Tower of Hanoi concept made into a children's game.
+                    This game includes randomization of the difficulty and provides an easy learning opportunity for 
+                    young people or individuals new to using a mouse an opportunity to learn. Made in Unity. All assets created by me.
+                    Published on Itch.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/templeofhanoi"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+    </div>
 
-<!-- Copyright Footer -->
-<footer class="w3-container w3-padding-1 w3-center w3-white w3-xlarge">
-    <p class="w3-opacity"> <font size="1" face="verdana">
-        © Brad Kraemer. All rights reserved.
-    </p>
-</footer>
+    <div class="Portfoliocontainer">
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">Fishing Craze</p>
+            </div>
+            <div>
+                <p>
+                    Fishing Craze is an easy to grasp fishing game where players use angle and strength
+                    to throw a bobber into the ocean. Fish swim inbetween invisible nodes, and the player can pull a fish
+                    out of the water once they are touching the bobber. Made in Unity. All assets made locally. 
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/FishingCraze"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+    </div>
+
+    <div class="Portfoliocontainer">
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">Project Excelsior</p>
+            </div>
+            <div>
+                <p>
+                    Project Exclesior is my first attempt at creating an original game with networking and multiplayer functionality.
+                    The idea of the game is that a group of adventurers (players) are exploring a location for gold, and one adventurer 
+                    is attempting to vanquish the other adventurers before the gold goal is reached. Made in Unity. Uses third-party assets.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/templeofhanoi"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Portfoliocontainer">
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">Quest</p>
+            </div>
+            <div>
+                <p>
+                    Quest is one of my first ever Unity game creations after college. 
+                    Quest is a choice driven exploration game where players are attempting to escape a cave after their
+                    village is attacked and they are captured.
+                    The game is built using Unity Scriptable objects. Made in Unity. All assets made locally. 
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/FishingCraze"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+    </div>
+
+    <div class="Portfoliocontainer">
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">SpaceJam</p>
+            </div>
+            <div>
+                <p>
+                    SpaceJam originally started as a simple clone of the popular Galaga game.
+                    It eventually evolved into a small "runner-like" game that I fully-developed
+                    and play on my phone from time to time. Made in Unity. All assets made by myself.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/SpaceJam"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="Portfoliocontainer">
+        <div class="side Portfoliobackground">
+            <div>
+                <p class="Welcomeheader">N's Game</p>
+            </div>
+            <div>
+                <p>
+                    N's game is a small 2D sidescrolling hack-n-slash game I made for a friend's birthday.
+                    He was turning 24 at the time, and on defeating the 24th enemy it shared a small happy birthday message.
+                    N's game uses third-party assets I downloaded from the asset store.
+                </p>
+            </div>
+            <div>
+                <a href="https://github.com/gingerbradman/N-s-Game"><i class="fa fa-github TextXXLarge"></i></a>
+            </div>
+        </div>
+        <div class="side">
+            <!-- Slide Show -->
+            <img src="Pictures/Portrait.jpg">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="bottom" class="Footercontainer">
+        <div class="Hellocontainer">
+            <div class="Skillheader">
+                <p>Say Hello!</p>
+            </div>
+            <div>
+                <p>(1) 985-227-8758</p>
+            </div>
+            <div>
+                <p>bjkraemer1@gmail.com</p>
+            </div>
+        </div>
+        <a href="https://github.com/gingerbradman"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/brad-kraemer-aaa3b1186"><i class="fa fa-linkedin"></i></a>
+    </footer>
+
+    <!-- Copyright Footer -->
+    <footer class="w3-container w3-padding-1 w3-center w3-white w3-xlarge">
+        <p class="w3-opacity">
+            <font size="1" face="verdana">
+                © Brad Kraemer. All rights reserved.
+        </p>
+    </footer>
 
 </body>
+
 </html>

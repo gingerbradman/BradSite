@@ -9,102 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-    <style>
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 400px;
-            height: 400px;
-            border-radius: 200px;
-            float: left;
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        .textBackgroundA
-        {
-            border-radius: 50px;
-            background: cornflowerblue;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            color: white;
-        }
-    
-        .textBackgroundB
-        {
-            border-radius: 50px;
-            background: cornflowerblue;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            color: white;
-        }
-
-        .textBackgroundB:hover
-        {
-            border-radius: 50px;
-            background: #111;
-            border: 3px solid cornflowerblue;
-        }
-
-        a:link { text-decoration: none; }
-
-        a:visited { text-decoration: none; }
-
-        a:hover { text-decoration: none; }
-
-        a:active { text-decoration: none; }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #111;
-        }
-
-        li
-        {
-            float: left;
-        }
-
-        li a
-        {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .active
-        {
-            background-color: cornflowerblue;
-        }
-
-        .side
-        {
-            display: inline-block;
-        }
-
-        li a:hover
-        {
-            background-color: cornflowerblue;
-        }
-
-        .container {
-            display: grid;
-            align-items: center; 
-            grid-template-columns: 1fr 1fr 1fr;
-            column-gap: 200px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-    </style>
+    <link href="StyleSheet.css" rel="stylesheet">
 </head>
 
 <body>
@@ -113,8 +18,6 @@
     <!-- Navigation -->
     <ul>
         <li><a class="active" href="BradSiteHome.html">Home</a></li>
-        <li><a href="BradSiteAboutMe.html">About Me</a></li>
-        <li><a href="BradSiteContactInfo.html">Contact Info</a></li>
         <li><a href="BradSitePortfolio.html">Portfolio</a></li>
         <li><a href="BradSiteResume.html">Resume</a></li>
     </ul>
@@ -123,12 +26,105 @@
         <div class="side">
             <!-- Slide Show -->
             <img class="mySlides" src="Pictures/Portrait.jpg">
-            <img class="mySlides" src="Pictures/Ryel.jpg">
-            <img class="mySlides" src="Pictures/Hanoi.jpg">
+            <img class="mySlides" src="Pictures/BradDog.JPEG">
+            <img class="mySlides" src="Pictures/BradFall.JPEG">
         </div>
         <div class="side">
-            <p class="textBackgroundA">Hello! I'm Brad</p>
-            <p class="textBackgroundB"><a href="BradSiteContactInfo.html">Contact me here!</a></p>
+            <p class="textBackgroundA">Hello! I'm Brad.</p>
+            <p class="textBackgroundB"><a href="#bottom">Contact me here!</a></p>
+        </div>
+    </div>
+
+    <div>
+        <div class="containerB">
+            <div class="side Textlarge">
+                <p class="Welcomeheader">Welcome to my Website!</p>
+                <p>I enjoy working on a lot of different things. But I enjoy game development the most.</p>
+                <p>My favorite parts of development are sharing what I've made with users / players.</p>
+            </div>
+            <div class="side">
+                <img src="Pictures/BradSelfie.JPEG">
+            </div>
+        </div>
+
+        <div class="Skillcontainer">
+            <div>
+                <p class="Skillheader">
+                    Who am I?
+                </p>
+            </div>
+            <div class="containerB">
+                <div class="side">
+                    <p class="Skillheader">Engineer</p>
+                    <p>I have a bachelor's degree in Computer Science and work as a Software Engineer full-time.</p>
+                </div>
+                <div class="side">
+                    <p class="Skillheader">Artist</p>
+                    <p>I've recently discovered a love of animation, pixel art, and painting.</p>
+                </div>
+                <div class="side">
+                    <p class="Skillheader">Adventurer</p>
+                    <p>I love traveling, scuba diving, hiking, and all other parts of nature.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Peoplesay">
+        <div class="Skillheader">
+            <p>What People Say</p>
+        </div>
+        <div class="containerB">
+            <div class="side">
+                <div class="side">
+                    <img class="smallImg" src="Pictures/Father.JPEG">
+                </div>
+                <div class="side">
+                    <p> He's my favorite kid!</p>
+                    <p class="Peopleheader">Brad Kraemer Sr.</p>
+                    <p class="Peoplejob">Father</p>
+                </div>
+            </div>
+            <div class="side">
+                <div class="side">
+                    <img class="smallImg" src="Pictures/Mother.JPEG">
+                </div>
+                <div class="side">
+                    <p>He's our only child.</p>
+                    <p class="Peopleheader">Penny Kraemer</p>
+                    <p class="Peoplejob">Mother</p>
+                </div>
+            </div>
+            <div class="side">
+                <div class="side">
+                    <img class="smallImg" src="Pictures/Alexis.JPEG">
+                </div>
+                <div class="side">
+                    <p>Too many allergies!</p>
+                    <p class="Peopleheader">Alexis</p>
+                    <p class="Peoplejob">Girlfriend</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Faqcontainer">
+        <div class="Faqheader">
+            <p>Frequently Asked Questions</p>
+        </div>
+        <div>
+            <button class="accordion">What kind of games do you make?</button>
+            <div class="panel">
+              <p>I make all kinds of games! Most of my experience is in Unity.</p>
+            </div>
+            <button class="accordion">What was your most challenging game feature to learn?</button>
+            <div class="panel">
+              <p>Networking. I'm still learning a lot about the server-client process but I have successfully made a few games that feature multiplayer.</p>
+            </div>
+            <button class="accordion">How do you spell your last name?</button>
+            <div class="panel">
+              <p>K-R-A-E-M-E-R, there's an extra E for flavor.</p>
+            </div> 
         </div>
     </div>
 
@@ -150,16 +146,38 @@
 
     </script>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+        }
+    </script>
 
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-        <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+    <footer id="bottom" class="Footercontainer">
+        <div class="Hellocontainer">
+            <div class="Skillheader">
+                <p>Say Hello!</p>
+            </div>
+            <div>
+                <p>(1) 985-227-8758</p>
+            </div>
+            <div>
+                <p>bjkraemer1@gmail.com</p>
+            </div>
+        </div>
         <a href="https://github.com/gingerbradman"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/in/brad-kraemer-aaa3b1186"><i class="fa fa-linkedin"></i></a>
-        <p class="w3-medium">
-        </p>
     </footer>
 
     <!-- Copyright Footer -->
