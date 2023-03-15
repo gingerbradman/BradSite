@@ -1,80 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<style>
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-</style>
+    <title>
+        Brad's Website
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+            height: 400px;
+            border-radius: 200px;
+            float: left;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .textBackgroundA
+        {
+            border-radius: 50px;
+            background: cornflowerblue;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            color: white;
+        }
+    
+        .textBackgroundB
+        {
+            border-radius: 50px;
+            background: cornflowerblue;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            color: white;
+        }
+
+        .textBackgroundB:hover
+        {
+            border-radius: 50px;
+            background: #111;
+            border: 3px solid cornflowerblue;
+        }
+
+        a:link { text-decoration: none; }
+
+        a:visited { text-decoration: none; }
+
+        a:hover { text-decoration: none; }
+
+        a:active { text-decoration: none; }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #111;
+        }
+
+        li
+        {
+            float: left;
+        }
+
+        li a
+        {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .active
+        {
+            background-color: cornflowerblue;
+        }
+
+        .side
+        {
+            display: inline-block;
+        }
+
+        li a:hover
+        {
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            display: grid;
+            align-items: center; 
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
 </head>
 
 <body>
-<!-- Content will go here -->
+    <!-- Content will go here -->
 
-<!-- Navigation -->
-<nav class="w3-bar w3-black">
-    <a href="BradSiteHome.html" class="w3-button w3-bar-item">Home</a>
-    <a href="BradSiteProfile.html" class="w3-button w3-bar-item">Profile</a>
-    <a href="BradSiteGames.html" class="w3-button w3-bar-item">Games</a>
-    <a href="BradSiteResume.html" class="w3-button w3-bar-item">Resume</a>
-</nav>
+    <!-- Navigation -->
+    <ul>
+        <li><a class="active" href="BradSiteHome.html">Home</a></li>
+        <li><a href="BradSiteAboutMe.html">About Me</a></li>
+        <li><a href="BradSiteContactInfo.html">Contact Info</a></li>
+        <li><a href="BradSitePortfolio.html">Portfolio</a></li>
+        <li><a href="BradSiteResume.html">Resume</a></li>
+    </ul>
 
-<!-- Slide Show -->
-<section class="w3-center w3-container">
-    <img class="mySlides" src="Pictures/Portrait.jpg" width="400" height="500">
-    <img class="mySlides" src="Pictures/Ryel.jpg" width="400" height="500">
-    <img class="mySlides" src="Pictures/Hanoi.jpg" width="400" height="500">
-</section>
+    <div class="container">
+        <div class="side">
+            <!-- Slide Show -->
+            <img class="mySlides" src="Pictures/Portrait.jpg">
+            <img class="mySlides" src="Pictures/Ryel.jpg">
+            <img class="mySlides" src="Pictures/Hanoi.jpg">
+        </div>
+        <div class="side">
+            <p class="textBackgroundA">Hello! I'm Brad</p>
+            <p class="textBackgroundB"><a href="BradSiteContactInfo.html">Contact me here!</a></p>
+        </div>
+    </div>
 
-<script>
-var myIndex = 0;
-carousel();
+    <script>
+        var myIndex = 0;
+        carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++)
-    {
-        x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1;}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
-}
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1; }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 5000);
+        }
 
-</script>
+    </script>
 
-<section class="w3-container w3-center w3-content" style="max-width:600px">
-    <h2 class="w3-wide">THE BRAD</h2>
-    <p class="w3-opacity"><i>He wub his geef</i></p>
-    <p class="w3-center">
-    Sphinx of black quartz, judge my vow</p>
-</section> 
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
-    <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
-    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
-    <a href="https://github.com/gingerbradman"><i class="fa fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/brad-kraemer-aaa3b1186"><i class="fa fa-linkedin"></i></a>
-    <p class="w3-medium">
-    </p>
-</footer>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+        <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/gingerbradman"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/brad-kraemer-aaa3b1186"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+        </p>
+    </footer>
 
-<!-- Copyright Footer -->
-<footer class="w3-container w3-padding-1 w3-center w3-white w3-xlarge">
-    <p class="w3-opacity"> <font size="1" face="verdana">
-        © Brad Kraemer. All rights reserved. Privacy Policy.
-    </p>
-</footer>
+    <!-- Copyright Footer -->
+    <footer class="w3-container w3-padding-1 w3-center w3-white w3-xlarge">
+        <p class="w3-opacity">
+            <font size="1" face="verdana">
+                © Brad Kraemer. All rights reserved.
+        </p>
+    </footer>
 
 </body>
+
 </html>
