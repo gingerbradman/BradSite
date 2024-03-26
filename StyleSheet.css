@@ -18,6 +18,22 @@ img {
     float: left;
 }
 
+.Portfoliobackground
+{
+    border-radius: 100px;
+    padding: 30px;
+    margin: auto;
+    background: cornflowerblue;
+    width: 1000px;
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 .textBackgroundA
 {
     border-radius: 50px;
@@ -36,6 +52,14 @@ img {
     width: 200px;
     text-align: center;
     color: white;
+    border: 3px solid cornflowerblue;
+}
+
+.textBackgroundB:hover
+{
+    border-radius: 50px;
+    background: #111;
+    border: 3px solid cornflowerblue;
 }
 
 .textBackgroundC
@@ -52,34 +76,13 @@ img {
     position: relative;
     display: flex;
     justify-content: center;
-}
-
-.Portfoliobackground
-{
-    border-radius: 100px;
-    padding: 30px;
-    margin: auto;
-    background: cornflowerblue;
-    width: 1000px;
-    text-align: center;
-    color: white;
-    font-size: large;
-    font-weight: bold;
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.textBackgroundB:hover
-{
-    border-radius: 50px;
-    background: #111;
     border: 3px solid cornflowerblue;
 }
 
 .textBackgroundC:hover
 {
     border-radius: 100px;
+    margin: auto;
     background: #111;
     border: 3px solid cornflowerblue;
 }
@@ -203,6 +206,7 @@ li a:hover
 
 .Skillcontainer
 {
+    margin-top: 200px;
     width: 100%;
     display: table;
 }
