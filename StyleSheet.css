@@ -128,11 +128,6 @@ li:last-child {
     background-color: cornflowerblue;
 }
 
-.side
-{
-    display: inline-block;
-}
-
 li a:hover
 {
     background-color: cornflowerblue;
@@ -166,13 +161,13 @@ li a:hover
     justify-content: center;
 }
 
-.containerB {
+.Peoplecontainer {
     display: grid;
     align-items: center; 
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 200px;
-    margin-left: 50px;
-    margin-right: 50px;
+    column-gap: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -208,7 +203,40 @@ li a:hover
 
 .Skillcontainer
 {
-    padding: 100px;
+    width: 100%;
+    display: table;
+}
+
+.Skillheader
+{    
+    min-height: 20px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+.Skill
+{    
+    min-height: 20px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.side
+{
+    display: table-cell;
+}
+
+.containerB {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .Faqcontainer
@@ -243,13 +271,6 @@ li a:hover
 
 .Welcomeheader
 {
-    font-size: large;
-    font-weight: bold;
-}
-
-.Skillheader
-{
-    text-align: center;
     font-size: large;
     font-weight: bold;
 }
@@ -290,4 +311,4 @@ li a:hover
 .TextXXLarge
 {
     font-size: xx-large;
-}
+}​
